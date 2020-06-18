@@ -1,4 +1,4 @@
-FROM debian:sid-slim
+FROM balenalib/rpi-raspbian:jessie
 
 ENV TZ Europe/Berlin
 
