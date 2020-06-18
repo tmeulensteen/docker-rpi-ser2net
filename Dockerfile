@@ -2,7 +2,7 @@ FROM tommeulensteen/docker-rpi-raspbian
 
 RUN [ "cross-build-start" ]
 
-ENV TZ Europe/Berlin
+ENV TZ Europe/Amsterdam
 
 RUN apt-get update && \
     apt-get install -y ser2net && \
