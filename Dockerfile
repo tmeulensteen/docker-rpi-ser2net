@@ -1,4 +1,4 @@
-FROM balenalib/rpi-raspbian:jessie
+FROM tommeulensteen/docker-rpi-raspbian
 
 ENV TZ Europe/Berlin
 
