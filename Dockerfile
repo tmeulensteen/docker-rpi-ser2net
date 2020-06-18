@@ -8,7 +8,5 @@ RUN apt-get update && \
 
 ADD ser2net.conf /etc/ser2net.conf
 
-EXPOSE 3333
-
 CMD echo -n "Starting " && ser2net -v && ser2net -u -d -c /etc/ser2net.conf
 
