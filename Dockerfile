@@ -1,5 +1,7 @@
 FROM tommeulensteen/docker-rpi-raspbian
 
+RUN [ "cross-build-start" ]
+
 ENV TZ Europe/Berlin
 
 RUN apt-get update && \
@@ -12,3 +14,4 @@ EXPOSE 2001
 
 CMD echo -n "Starting " && ser2net -v && ser2net -u -d -c /etc/ser2net.conf
 
+RUN [ "cross-build-end" ]
